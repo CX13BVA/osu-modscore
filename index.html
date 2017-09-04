@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Mod Score Calculator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mod Score Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <form onsubmit="handleSubmit(event)">
+        <h2>Total Kudosu</h2>
+        <input name="totalKudosu" type="text" placeholder="# of Kudosu" oninput="handleChange(event)">
+        <h2>Month 1</h2>
+        <input name="mods1" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+        <h2>Month 2</h2>
+        <input name="mods2" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+        <h2>Month 3</h2>
+        <input name="mods3" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+        <button type="submit">Calculate!</button>
+      </form>
+      <div class="result hidden" id="result-panel">
+        <h2>Kudosu Score: <span id="result-kudosu"></span></h2>
+        <h2>Mod Score: <span id="result-mod"></span></h2>
+        <hr>
+        <h2>Basic Score: <span id="result-basic"></span></h2>
+      </div>
+    </div>
+  </body>
+</html>
