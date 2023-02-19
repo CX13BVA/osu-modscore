@@ -13,7 +13,7 @@ function displayResult() {
             - 2 * (1 + expectedMods) / (1 + cur);
     }, 0);
     const resultMod = document.getElementById('result-mod');
-    resultMod.innerHTML = modScore.toFixed(4);
+    resultMod.innerHTML = modScore.toFixed(2);
 }
 
 function handleChange(e) {
