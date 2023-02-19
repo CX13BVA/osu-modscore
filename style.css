@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background-color: #6B3FA0;
+  background-color: #4d4d4d;
   font-family: Arial, sans-serif;
   margin: 0;
 }
@@ -20,7 +20,7 @@ h3 {
 
 input {
   color: #E7E7E7;
-  background-color: #8456BC;
+  background-color: #969696;
   caret-color: #E7E7E7;
   border: none;
   border-radius: 0.1em;
@@ -31,11 +31,11 @@ input {
 }
 
 input::placeholder {
-  color: #A3A3A3;
+  color: #000000;
 }
 
 button {
-  background-color: #6B3FA0;
+  background-color: #8456BC;
   border: none;
   border-radius: 0.1em;
   color: #E7E7E7;
@@ -47,7 +47,7 @@ button {
 
 button:hover {
   background-color: #53317B;
-  box-shadow: 0px 0px 3px 1px #8456BC;
+  box-shadow: 0px 0px 3px 1px #53317B;
 }
 
 hr {
