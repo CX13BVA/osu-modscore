@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145054161-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-145054161-1');
+        </script>
+        <!-- Meta -->
+        <title>osu! Mod Score Calculator</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Tool for calculating mod score to determine eligibility of osu! Beatmap Nominator applicants.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#53317B">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="6m-style.css">
+        <!-- Scripts -->
+        <script src="6m-script.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <form onsubmit="handleSubmit(event)">
+                <h2>Expected Monthly Mods</h2>
+                <h3>Enter 3 months, 2 if you were a BN before.</h3>
+                <h2>Month 1</h2>
+                <input name="expectedMods" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+                <h2>Month 2</h2>
+                <input name="mods1" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+                <h2>Month 3</h2>
+                <input name="mods2" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+                <h2>Month 4</h2>
+                <input name="mods3" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+                <h2>Month 5</h2>
+                <input name="mods4" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+                <h2>Month 6</h2>
+                <input name="mods5" type="text" placeholder="# of Mods" oninput="handleChange(event)">
+                <button type="submit">Calculate!</button>
+            </form>
+            <div class="result hidden" id="result-panel">
+                <h2>Mod Score: <span id="result-mod"></span></h2>
+            </div>
+        </div>
+    </body>
+</html>
