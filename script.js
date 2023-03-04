@@ -3,7 +3,6 @@ var expectedMods = 0;
 var modCounts = {
     mods1: 0,
     mods2: 0,
-    mods3: 0,
 };
 
 function displayResult() {
